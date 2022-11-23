@@ -50,6 +50,12 @@ article {
    
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 /* styles */
 
 footer a {
@@ -77,3 +83,53 @@ main, figure {
     border-radius: 12px;
 }
 
+@media only screen and (max-width: 375px) , (max-height: 480px)   {
+    body {
+        width: 375px;
+        height: 480px;
+        font-family: 'Outfit', sans-serif;
+        font-size: 0.8em;
+        background-color: hsl(212, 45%, 89%);
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10%;
+    
+    }
+
+    main {
+        background-color: hsl(0, 0%, 100%);
+        width: 50%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    figure {
+        margin: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    article {
+        margin: 12px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        row-gap: 10px;
+       
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
